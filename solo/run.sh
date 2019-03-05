@@ -1,2 +1,1 @@
-cd /root/blog
-java -cp WEB-INF/lib/*:WEB-INF/classes org.b3log.solo.Starter
+cd /root/blog && java -cp WEB-INF/lib/*:WEB-INF/classes org.b3log.solo.Starter
