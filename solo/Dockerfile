@@ -8,4 +8,4 @@ RUN wget https://github.com/b3log/solo/releases/download/v3.2.0/solo-v3.2.0.war
 ##解压并删除war包
 RUN unzip solo-v3.2.0.war -d /root/blog &&rm -rf solo-v3.2.0.war
 ##启动博客
-CMD java -cp WEB-INF/lib/*:WEB-INF/classes org.b3log.solo.Starter
+CMD  cd /root && java -cp WEB-INF/lib/*:WEB-INF/classes org.b3log.solo.Starter
