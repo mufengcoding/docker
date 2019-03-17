@@ -24,7 +24,7 @@ with open("/root/docker/solo/Dockerfile","w") as f2:
 with open("/root/docker/autoupdate/version","w") as f1:
     f1.write(b['name'])
 # os.system('git tag -a '+b["name"])
-os.system('git tag -a 3.1.0')
+os.system('git tag -a 3.1.0 -m'+b['name'])
 os.system('git commit -a -m '+b['name'])
 os.system('git push')
 os.system('git push origin --tags')
