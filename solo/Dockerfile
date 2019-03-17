@@ -13,5 +13,6 @@ RUN chmod u+x /root/run.sh
 #RUN unzip solo-v3.2.0.war -d /root/blog &&rm -rf solo-v3.2.0.war
 RUN unzip solo-v3.3.0.war -d /root/blog &&rm -rf solo-v3.3.0.war
 WORKDIR /root/blog
+
 ##启动博客
 CMD ["/root/run.sh"]
